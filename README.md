@@ -1,50 +1,72 @@
 <div align="center">
 
-# Skylish Fluency
+# 🌎 Skylish Fluency
 
 ### Plataforma educacional web para aprendizagem de idiomas
 
-Uma experiência digital desenvolvida com foco em organização dos estudos, interação, responsividade e experiência do usuário.
+Uma experiência digital desenvolvida com foco em aprendizagem, organização, interação e experiência do usuário.
 
-[🌐 Acessar plataforma](https://skylish-fluency-plataforma.web.app/)
+[![Acessar Plataforma](https://img.shields.io/badge/🌐_Acessar_Plataforma-7C3AED?style=for-the-badge)](https://skylish-fluency-plataforma.web.app/)
 
 </div>
 
 ---
 
-## Sobre o projeto
+## 📖 Sobre o projeto
 
-O **Skylish Fluency** é uma plataforma educacional web desenvolvida para oferecer uma experiência de aprendizagem de idiomas organizada, moderna e acessível em diferentes dispositivos.
+O **Skylish Fluency** é uma plataforma educacional web desenvolvida para proporcionar uma experiência moderna e organizada de aprendizagem de idiomas.
 
-O projeto reúne uma interface institucional e um ambiente dedicado ao aluno, integrando recursos de estudo, acompanhamento de progresso e gerenciamento de conteúdo.
+O projeto combina uma página institucional com um ambiente dedicado aos alunos, reunindo recursos de estudo, acompanhamento de evolução, atividades e gerenciamento de conteúdo em uma única experiência digital.
 
-Seu desenvolvimento faz parte da minha evolução prática em **Desenvolvimento Web**, permitindo aplicar conhecimentos de Front-end, UI/UX, responsividade, autenticação, persistência de dados e integração com serviços externos.
-
----
-
-## Principais funcionalidades
-
-- Área exclusiva do aluno
-- Cursos e organização de aulas
-- Exercícios e quizzes interativos
-- Sistema de XP e gamificação
-- Acompanhamento de progresso
-- Biblioteca de conteúdos
-- Caderno de estudos
-- Comunidade
-- Perfil do aluno
-- Certificados
-- Sistema de notificações
-- Autenticação e controle de acesso
-- Painel para gerenciamento de conteúdo
-- Interface responsiva para desktop e mobile
-- Recursos de PWA e suporte a experiência offline
+Seu desenvolvimento faz parte da minha evolução prática em **Desenvolvimento Web**, aplicando conceitos de Front-end, responsividade, UI/UX, JavaScript, autenticação, persistência de dados e integração com serviços externos.
 
 ---
 
-## Tecnologias utilizadas
+## 📸 Preview
 
-<div>
+### 🖥️ Experiência Desktop
+
+Interface principal desenvolvida com foco em identidade visual, hierarquia das informações e navegação.
+
+![Skylish Fluency - Desktop](docs/preview-home-desktop.png)
+
+### 📱 Experiência Mobile
+
+A experiência também foi adaptada para smartphones, reorganizando navegação, conteúdo e chamadas para ação para diferentes tamanhos de tela.
+
+<p align="center">
+  <img 
+    src="docs/preview-home-mobile.png" 
+    width="300" 
+    alt="Skylish Fluency - versão mobile"
+  >
+</p>
+
+---
+
+## ✨ Principais funcionalidades
+
+- 👤 Área dedicada ao aluno
+- 📚 Organização de cursos e aulas
+- 📝 Exercícios e quizzes
+- 🏆 Sistema de XP e gamificação
+- 📈 Acompanhamento de evolução
+- 📖 Biblioteca de conteúdos
+- 📓 Caderno de estudos
+- 💬 Comunidade
+- 🔔 Sistema de notificações
+- 🎓 Certificados
+- 🔐 Autenticação e controle de acesso
+- ⚙️ Gerenciamento de conteúdo
+- 📱 Interface responsiva
+- 🌐 Recursos de PWA
+- 📶 Experiência offline parcial
+
+---
+
+## 🛠️ Tecnologias
+
+<p>
 
 ![HTML5](https://img.shields.io/badge/HTML5-111111?style=for-the-badge&logo=html5&logoColor=E34F26)
 ![CSS3](https://img.shields.io/badge/CSS3-111111?style=for-the-badge&logo=css3&logoColor=1572B6)
@@ -52,39 +74,29 @@ Seu desenvolvimento faz parte da minha evolução prática em **Desenvolvimento 
 ![Firebase](https://img.shields.io/badge/Firebase-111111?style=for-the-badge&logo=firebase&logoColor=FFCA28)
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-111111?style=for-the-badge&logo=cloudinary&logoColor=3448C5)
 
-</div>
+</p>
 
 ---
 
-## Experiência e interface
+## 📱 Responsividade
 
-A interface foi construída buscando equilibrar **clareza visual, identidade, usabilidade e responsividade**.
+O Skylish Fluency foi desenvolvido considerando diferentes tamanhos de tela.
 
-O projeto considera diferentes jornadas dentro da plataforma, desde a apresentação inicial até áreas específicas de estudo e gerenciamento.
+A interface adapta elementos como:
 
-### Desktop
-Interface adaptada para telas maiores, priorizando organização do conteúdo e navegação.
+- navegação;
+- tipografia;
+- disposição dos conteúdos;
+- cards;
+- botões e chamadas para ação;
+- áreas de estudo;
+- menus e componentes interativos.
 
-### Mobile
-Experiência responsiva pensada para smartphones, com reorganização dos componentes e navegação adequada para telas menores.
-
----
-
-## Preview
-
-> Screenshots reais da plataforma serão adicionados nesta seção.
-
-<!--
-![Página inicial](docs/preview-home.png)
-
-![Área do aluno](docs/preview-dashboard.png)
-
-![Versão mobile](docs/preview-mobile.png)
--->
+O objetivo é manter uma experiência consistente tanto em **desktop quanto em dispositivos móveis**.
 
 ---
 
-## Arquitetura do projeto
+## 🗂️ Estrutura do projeto
 
 ```text
 skylish-fluency/
@@ -95,6 +107,8 @@ skylish-fluency/
 ├── css/
 │
 ├── docs/
+│   ├── preview-home-desktop.png
+│   └── preview-home-mobile.png
 │
 ├── firebase/
 │
@@ -105,6 +119,7 @@ skylish-fluency/
 │   └── student/
 │
 ├── index.html
+├── offline.html
 ├── service-worker.js
 ├── site.webmanifest
 ├── firebase.json
@@ -113,37 +128,59 @@ skylish-fluency/
 
 ---
 
-## Desenvolvimento
+## 💡 Desenvolvimento e aprendizados
 
-Durante o desenvolvimento do Skylish Fluency, trabalhei conceitos importantes para minha formação, incluindo:
+O desenvolvimento do Skylish Fluency permitiu trabalhar diferentes áreas de uma aplicação web.
 
-**Front-end Development** • **Responsive Design** • **UI/UX** • **JavaScript** • **Firebase** • **Autenticação** • **Persistência de dados** • **Integração de serviços** • **Organização de código**
+Entre os principais conhecimentos colocados em prática estão:
 
-O projeto também passou por diferentes etapas de evolução e refinamento, principalmente na experiência mobile, área do aluno, navegação e organização das funcionalidades.
+`Front-end Development`
+
+`Responsive Design`
+
+`UI/UX`
+
+`JavaScript`
+
+`Firebase`
+
+`Autenticação`
+
+`Persistência de dados`
+
+`Integração com serviços externos`
+
+`Organização de interfaces`
+
+`Experiência do usuário`
+
+O projeto também passou por diferentes etapas de evolução e refinamento, principalmente na experiência mobile, organização das funcionalidades e ambiente do aluno.
 
 ---
 
-## Segurança
+## 🔐 Segurança
 
-A versão pública deste repositório não contém credenciais privadas de serviços externos.
+A versão pública deste repositório foi preparada para apresentação em portfólio.
 
-Configurações específicas de ambiente devem ser definidas individualmente antes da utilização das integrações.
+Credenciais privadas e configurações que não devem fazer parte de um repositório público não são necessárias para compreender a estrutura e o desenvolvimento do projeto.
+
+Para utilizar integrações externas em outro ambiente, é necessário configurar os respectivos serviços e revisar suas regras de acesso.
 
 ---
 
-## Demonstração
+## 🚀 Demonstração
 
-A versão publicada da plataforma está disponível para visualização:
+A plataforma possui uma versão publicada para demonstração.
 
 ### 🌐 [Acessar Skylish Fluency](https://skylish-fluency-plataforma.web.app/)
 
 ---
 
-## Autor
+## 👨🏽‍💻 Autor
 
 ### Antony Gabriel
 
-Estudante de **Análise e Desenvolvimento de Sistemas (ADS)** e desenvolvedor web em formação, com foco em **Front-end, Desenvolvimento Web e UI/UX**.
+Estudante de **Análise e Desenvolvimento de Sistemas (ADS)** e desenvolvedor web em formação, com foco em **Desenvolvimento Web, Front-end e UI/UX**.
 
 [![GitHub](https://img.shields.io/badge/GitHub-antonygabrieldev-181717?style=for-the-badge&logo=github)](https://github.com/antonygabrieldev)
 
@@ -151,8 +188,13 @@ Estudante de **Análise e Desenvolvimento de Sistemas (ADS)** e desenvolvedor we
 
 <div align="center">
 
-**Projeto desenvolvido como parte da minha evolução em Desenvolvimento Web.**
+### 💻 Desenvolvimento Web • Front-end • UI/UX
 
+Projeto desenvolvido como parte da minha evolução profissional em tecnologia.
+
+**Antony Gabriel © 2026**
+
+</div>
 `Front-end` • `UI/UX` • `Responsividade` • `Tecnologia`
 
 </div>
