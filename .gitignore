@@ -1,0 +1,21 @@
+# Local/private configuration
+.env
+.env.*
+!.env.example
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs/temp
+*.log
+tmp/
+temp/
+
+# Never commit private server credentials
+*service-account*.json
+*serviceAccount*.json
+*.pem
+*.key

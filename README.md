@@ -1,81 +1,84 @@
-# Skylish Fluency — Firebase integrado
+# Skylish Fluency 🌎
 
-Esta versão já está preparada para o projeto Firebase `skylish-fluency`.
+> Plataforma educacional web para aprendizagem de idiomas, criada como projeto de desenvolvimento web e experiência digital.
 
-## Recursos conectados
+## Sobre o projeto
 
-- cadastro real com nome, e-mail e senha;
-- login real;
-- recuperação de senha;
-- sessão persistente;
-- perfil do usuário em `users`;
-- painel do professor protegido por função;
-- aulas em `lessons`;
-- avisos em `posts`;
-- comentários em `comments`;
-- progresso em `users/{uid}/progress`;
-- lista de alunos para o professor.
+O **Skylish Fluency** reúne uma experiência pública de apresentação da plataforma e áreas dedicadas ao aluno e à gestão de conteúdo. O projeto foi desenvolvido com foco em interface responsiva, organização da jornada de estudo e evolução contínua das funcionalidades.
 
-## Conta do professor
+Este repositório é uma **versão de portfólio**. Configurações de serviços externos foram substituídas por valores de exemplo antes da publicação pública.
 
-A conta que receberá a função de professor é:
+## Principais recursos
 
-```text
-biielcooperwinx@gmail.com
-```
+- Área do aluno e acompanhamento de estudos
+- Cursos, aulas e exercícios
+- Quizzes e atividades
+- Sistema de XP e gamificação
+- Certificados
+- Biblioteca e caderno de estudos
+- Comunidade
+- Perfil e configurações do aluno
+- Painel de gestão de conteúdo
+- Autenticação e controle de acesso
+- Notificações
+- Experiência responsiva para desktop e mobile
+- PWA / service worker e experiência offline parcial
 
-Na primeira vez:
+## Tecnologias
 
-1. Abra o site.
-2. Clique em **Criar conta**.
-3. Cadastre esse e-mail com uma senha de pelo menos 6 caracteres.
-4. O sistema criará o perfil com `role: teacher`.
-5. Depois do login, o Painel do Professor será aberto.
+![HTML5](https://img.shields.io/badge/HTML5-111111?style=for-the-badge&logo=html5&logoColor=E34F26)
+![CSS3](https://img.shields.io/badge/CSS3-111111?style=for-the-badge&logo=css3&logoColor=1572B6)
+![JavaScript](https://img.shields.io/badge/JavaScript-111111?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Firebase](https://img.shields.io/badge/Firebase-111111?style=for-the-badge&logo=firebase&logoColor=FFCA28)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-111111?style=for-the-badge&logo=cloudinary&logoColor=3448C5)
 
-Outros e-mails serão cadastrados como alunos.
-
-## Publicar as regras do Firestore
-
-No Firebase Console:
-
-1. Abra **Firestore Database**.
-2. Clique na aba **Regras**.
-3. Apague o conteúdo atual.
-4. Copie tudo do arquivo:
+## Estrutura
 
 ```text
-docs/firestore.rules
+/
+├── index.html
+├── pages/
+│   ├── auth/
+│   └── student/
+├── js/
+├── css/
+├── assets/
+├── firebase/
+├── service-worker.js
+├── site.webmanifest
+└── firebase.json
 ```
 
-5. Cole no editor.
-6. Clique em **Publicar**.
+## Segurança da versão pública
 
-Sem essas regras, o Firestore em modo de produção bloqueará o site.
+Antes de publicar o código, as configurações de integração foram sanitizadas:
 
-## Abrir no VS Code
+- Firebase: valores do projeto substituídos por placeholders.
+- Cloudinary: cloud name e unsigned upload preset substituídos por placeholders.
+- Nenhuma senha de usuário ou API Secret deve ser adicionada ao repositório.
+- Regras do Firestore e Storage continuam sendo parte essencial da proteção dos dados.
 
-1. Extraia o ZIP.
-2. Abra a pasta no VS Code.
-3. Use **Live Server** no `index.html`.
-4. Não abra apenas clicando duas vezes no HTML, pois módulos do Firebase precisam de um servidor local.
+> Para executar todas as funcionalidades, configure seus próprios projetos Firebase/Cloudinary e revise as regras de acesso antes do deploy.
 
-## Teste recomendado
+## Preview
 
-1. Cadastre a conta do professor.
-2. Crie uma aula e um aviso.
-3. Saia.
-4. Cadastre outro e-mail como aluno.
-5. Verifique se a aula e o aviso aparecem.
-6. Marque uma aula como concluída.
-7. Atualize a página e confirme que o progresso continua salvo.
+Adicione `docs/preview-desktop.png` e `docs/preview-mobile.png` para exibir previews reais do projeto sem expor dados pessoais.
 
-## Atualizar no GitHub
+## Demonstração
 
-```bash
-git init
-git add .
-git commit -m "Integra Firebase Authentication e Firestore"
-git branch -M main
-git remote add origin https://github.com/Anthony-thhony/skylish-fluency-interface-premium.git
-git push -u origin main --force
-```
+**Projeto online:** adicione aqui a URL pública do projeto.
+
+## Aprendizados
+
+O projeto reúne prática em desenvolvimento Front-end, responsividade, UX/UI, autenticação, persistência de dados, organização de funcionalidades, integração com serviços externos e evolução incremental de uma aplicação web.
+
+## Autor
+
+**Antony Gabriel**  
+Estudante de Análise e Desenvolvimento de Sistemas • Desenvolvedor Web em formação
+
+GitHub: **@antonygabrieldev**
+
+---
+
+**Projeto desenvolvido como parte da minha evolução em Desenvolvimento Web.**

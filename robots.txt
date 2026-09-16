@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /pages/student/
+Disallow: /pages/teacher/
+Disallow: /pages/admin/
+Disallow: /firebase/

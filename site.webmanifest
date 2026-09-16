@@ -1,0 +1,23 @@
+{
+  "name": "Skylish Fluency",
+  "short_name": "Skylish",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#070816",
+  "theme_color": "#070816",
+  "icons": [
+    {
+      "src": "assets/favicon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "description": "Plataforma de estudos Skylish Fluency",
+  "scope": "./",
+  "id": "./",
+  "orientation": "any",
+  "categories": [
+    "education",
+    "productivity"
+  ]
+}
